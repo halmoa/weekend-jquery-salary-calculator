@@ -1,7 +1,8 @@
-console.log('in client JS');
-$(document).ready(readyNow);
-function readyNow(){
-    console.log('in ready now');
+$(document).ready(onReady);
+
+function onReady() {
+    $('#submitEmployee').on('click', addEmployee);
+    $('#employeeList').on('click', '.delete', removeEmployee);
 }
-//inputs and b=submit button have been created on the html
-//
+
+
