@@ -1,6 +1,8 @@
-$(document).ready(onReady);
+$(document).ready(readyNow);
+console.log('in client JS');
 
-function onReady() {
+function readyNow() {
+    console.log('in readyNow');
     $('#submitBtn').on('click', addEmployee);
     $('#employeeList').on('click', '.delete', removeEmployee);
 }
@@ -8,7 +10,6 @@ function onReady() {
 let employeeList = [];
 
 function addEmployee(event) {
-    // this prevents the form from refreshing the page on submit
     event.preventDefault();
     let newEmployee = {
         firstName: $('#firstNameIn').val(),

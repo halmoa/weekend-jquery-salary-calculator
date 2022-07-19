@@ -4,13 +4,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/client.js"></script>
+  <link href="styles/styles.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header>
     <h1>Salary Calculator</h1>
 </header>
-
+<section id="employeeInfo">
+  <div>
+      <div class="form-group">
+          <h4>Add Employee</h4>
+      </div>
+          <div class="form-group">
+              <input id="firstNameIn" class="employeeInput col-sm" type="text" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            
+              <input id="lastNameIn" class="employeeInput col-sm" type="text" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            
+              <input id="idIn" class="employeeInput col-sm" type="text" placeholder="ID">
+          </div>
+          <div class="form-group">
+             
+              <input id="titleIn" class="employeeInput col-sm" type="text" placeholder="Title">
+          </div>
+          <div class="form-group">
+              
+              <input id="annualSalaryIn" class="employeeInput col-sm" type="text" placeholder="Annual Salary">
+          </div>
+      <div class="row">
+       
+          <button id="submitBtn">Submit</button>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="row">
+      <h4>Employees</h4>
+  </div>
+  <div class="row">
+      <table class="table">
+          <thead>
+              <tr>
+              <th>First Name</th><th>Last Name</th><th>ID</th><th>Title</th><th>Annual Salary</th><th></th>
+              </tr>
+          </thead>
+          <tbody id="employeeList">
+           
+          </tbody>
+      </table>
+  </div>
+  <div class="monthRow">
+      <div>
+          <h4>Total Monthly: <span id="totalSalary">$ 0.00</span></h4>
+      </div>
+  </div>
+</section>
 
 </body>
 </html>
