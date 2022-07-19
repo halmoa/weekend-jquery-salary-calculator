@@ -1,7 +1,7 @@
 $(document).ready(onReady);
 
 function onReady() {
-    $('#submitEmployee').on('click', addEmployee);
+    $('#submitBtn').on('click', addEmployee);
     $('#employeeList').on('click', '.delete', removeEmployee);
 }
 
