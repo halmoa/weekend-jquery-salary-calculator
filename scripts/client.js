@@ -25,8 +25,8 @@ function addEmployee(event) {
 }
 //// display all the employees to the DOM
 function showEmployee() {
-    let totalMonthlyCost = 0; // Total monthly cost of employees
-    let totalAnnualSalary = 0; // Total salary of employees
+    let totalMonthlyCost = 0; // monthly cost of employees
+    let totalAnnualSalary = 0; //  salary of employees
     let el = $('#employeeList');
     el.empty();
     for (let i = 0; i < employeeList.length; i++) {
@@ -34,7 +34,7 @@ function showEmployee() {
         <tr>
             <th>${employeeList[i].firstName}</th><th>${employeeList[i].lastName}</th><th>${employeeList[i].id}</th>
             <th>${employeeList[i].title}</th><th>$${employeeList[i].annualSalary}</th>
-            <th><button class="btn btn-danger delete">Delete</button></th>
+            <th><button">Delete</button></th>
         </tr>`);
         totalAnnualSalary += Number(employeeList[i].annualSalary);
     }
