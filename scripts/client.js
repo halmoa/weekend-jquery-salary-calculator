@@ -4,7 +4,7 @@ console.log('in client JS');
 function readyNow() {
     console.log('in readyNow');
     $('#submitBtn').on('click', addEmployee);
-    $('#employeeList').on('click', '.delete', removeEmployee);
+    $('#employeeList').on('click', removeEmployee);
 }
 
 let employeeList = [];
@@ -34,7 +34,7 @@ function showEmployee() {
         <tr>
             <th>${employeeList[i].firstName}</th><th>${employeeList[i].lastName}</th><th>${employeeList[i].id}</th>
             <th>${employeeList[i].title}</th><th>$${employeeList[i].annualSalary}</th>
-            <th><button">Delete</button></th>
+            <th><button>Delete</button></th>
         </tr>`);
         totalAnnualSalary += Number(employeeList[i].annualSalary);
     }
